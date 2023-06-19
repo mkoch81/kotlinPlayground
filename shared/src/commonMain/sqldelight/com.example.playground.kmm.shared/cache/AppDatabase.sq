@@ -1,0 +1,18 @@
+CREATE TABLE Post (
+    userId INTEGER NOT NULL,
+    id INTEGER NOT NULL,
+    title TEXT NOT NULL,
+    body TEXT NOT NULL
+);
+
+insertPost:
+INSERT INTO Post(userId, id, title, body)
+VALUES(?,?,?,?);
+
+removeAllPosts:
+DELETE FROM Post;
+
+selectAllPosts:
+SELECT Post.*
+FROM Post;
+
